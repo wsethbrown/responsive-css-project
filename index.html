@@ -11,28 +11,26 @@
 <body>
     
     <header>
-        <div class="main-header clearfix">
+        <nav class="main-header">
             <h1 class="name">Seth Brown</h1>
             <nav class=main-nav>
                 <a href="index.html">Home</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </nav>
-        </div>
+        </nav>
 
-        <div class="header clearfix">
+        <div class="header">
             <img src="images/responsive-layout-profile.png" alt="Profile Image">
             <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </div>
     </header>
 
         <section class="portfolio" id="portfolio">
-            
-            
             <!-- Start of Main Content-->
             <h1><strong>Portfolio</strong></h1>
 
-            <div class="main clearfix">      
+            <div class="main">      
                 <section class="marketing col double-row-1 triple-row-1">
                     <img src="images/portfolio-1.png" alt="Image of Marketing Website">
                     <h2>Marketing Page</h2>
@@ -70,11 +68,35 @@
                 </section>
             </div>   <!-- End of Main Content--> 
              
+            <section class="skills" id="skills">
+                <h1><strong>Skills</strong></h1>
 
+                <div class="skill-list">
+                    <p>HTML</p>
+                    <div class="container">
+                        <div class="skills html">90%</div>
+                    </div>
+
+                    <p>CSS</p>
+                    <div class="container">
+                        <div class="skills css">80%</div>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div class="container">
+                        <div class="skills js">65%</div>
+                    </div>
+
+                    <p>PHP</p>
+                    <div class="container">
+                        <div class="skills php">60%</div>
+                    </div>
+                </div>
+            </section>
     </section>
 
     <footer id="footer">
-        <section class="contact">
+        <section class="contact" id='contact'>
             <h2>Contact</h2>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <p>Phone <strong><a href="tel:+1(555)555-1234">+1(555)555-1234</a></strong></p>
