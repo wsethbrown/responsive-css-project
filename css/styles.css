@@ -1,13 +1,13 @@
 /* BASE ELEMENT STYLES */
 
 * {
-    background-color: aliceblue;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
 
 body {
+    background-color: aliceblue;
     max-width: 100%;
     color: darkgray;
     text-align: center;
@@ -38,6 +38,11 @@ a {
     text-transform: uppercase;
     background-color: aquamarine;
 }
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
 
 .main-nav a {
     color: white;
@@ -52,7 +57,7 @@ a {
 }
 
 .main-nav,
-.main-nav a {
+.main-nav ul a {
     display: block;
     text-align: center;
 }
@@ -145,14 +150,34 @@ a {
     justify-content: space-between;
 }
 
+.footer-nav-mobile {
+    text-transform: uppercase;
+    padding-right: 40px;
+}
+.footer-nav-mobile a {
+    color: gray;
+}
+.footer-nav-wide {
+    display: none;
+}
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+    .main-nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     .main-nav a {
         display: inline-block;
         margin: 10px;
         padding: 10px 20px;
+    }
+    
+    .main-header {
+        align-content: space-between;
     }
 
     .header {
@@ -183,13 +208,34 @@ a {
         width: 48%;
     }
 
+    .footer-nav-mobile {
+        display: none;
+    }
+    .footer-nav-wide {
+        display: block;
+    }
+    .footer-nav-wide {
+        text-transform: uppercase;
+        padding-right: 40px;
+    }
+    .footer-nav-wide a {
+        color: gray;
+    }
+    
+
 }
 
 @media screen and (min-width: 1024px) {
 
+    .main-nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
     .main-header {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 50px;
     }
 
     .name {
@@ -223,7 +269,7 @@ a {
 
     .header p {
         text-align: left;
-        font-size: 3rem;
+        font-size: 1.9rem;
         width: 40%;
         padding-left: 70px; 
     }

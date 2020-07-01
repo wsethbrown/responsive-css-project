@@ -11,14 +11,17 @@
 <body>
     
     <header>
-        <nav class="main-header">
+        <div class="main-header">
             <h1 class="name">Seth Brown</h1>
-            <nav class=main-nav>
-                <a href="index.html">Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
             </nav>
-        </nav>
+        </div>
 
         <div class="header">
             <img src="images/responsive-layout-profile.png" alt="Profile Image">
@@ -105,7 +108,15 @@
 
         <section class=footer-nav>
             <p class="footer-name">Seth Brown</p>
-            <a href="#portfolio" class="back-to-top">BACK TO TOP</a>
+            <nav class=footer-nav-mobile>
+                <a href="#portfolio" class="back-to-top">BACK TO TOP</a>
+            </nav>
+            <nav class=footer-nav-wide>
+                <a href="index.html">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <a href="#skills">Skills</a>
+            </nav>
         </section>
     </footer>
 
